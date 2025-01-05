@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Musical Genres Table</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse:separate;
+      margin: 20px 0;
+      
+    }
+    th, td {
+      padding: 8px;
+      border: 1px solid #000;
+      text-align: center;
+    }
+    th {
+      background-color: #1f96;
+    }
+    tfoot {
+      background-color: #f96;
+    }
+
+    td:hover{
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+
+<table>
+  <thead>
+    <tr>
+        <th colspan="4" style="background-color: blanchedalmond;">Music</th>
+    </tr>
+    <tr>
+      <th>Genre</th>
+      <th>Subgenre</th>
+      <th>Famous Artist</th>
+      <th>Year Originated</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td rowspan="2">Rock</td>
+      <td>Classic Rock</td>
+      <td>Led Zeppelin</td>
+      <td>1960s</td>
+    </tr>
+    <tr>
+      <td>Alternative Rock</td>
+      <td>Radiohead</td>
+      <td>1980s</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Electronic</td>
+      <td>House</td>
+      <td>Daft Punk</td>
+      <td>1980s</td>
+    </tr>
+    <tr>
+      <td>Dubstep</td>
+      <td>Skrillex</td>
+      <td>2000s</td>
+    </tr>
+    <tr>
+      <td>Hip-Hop</td>
+      <td>Trap</td>
+      <td>Future</td>
+      <td>2010s</td>
+    </tr>
+    <tr>
+      <td colspan="2">Jazz</td>
+      <td colspan="1">Miles Davis</td>
+      <td>1920s</td>
+    </tr>
+  </tbody>
+
+  <tfoot>
+    <tr>
+      
+      <th colspan="4"><marquee>Table showcasing various musical genres and famous artists</marquee></th>
+      
+    </tr>
+  </tfoot>
+</table>
+
+</body>
+</html>

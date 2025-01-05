@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detailed Form Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .checkbox-group, .radio-group {
+            display: flex;
+            gap: 20px;
+        }
+        .range-container {
+            margin-top: 5px;
+        }
+        .file-container {
+            margin-top: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Join the Patreon</h1>
+
+<form action="#" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    </div>
+
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+    </div>
+    <div class="form-group">
+        <label>Gender</label>
+        <div class="radio-group">
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+            <label><input type="radio" name="gender" value="other"> Other</label>
+        </div>
+    </div>
+    <div class="form-group">
+        <label>Interests</label>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="interests" value="music"> Music</label>
+            <label><input type="checkbox" name="interests" value="sports"> Sports</label>
+            <label><input type="checkbox" name="interests" value="travel"> Travel</label>
+            <label><input type="checkbox" name="interests" value="technology"> Technology</label>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="country">Country</label>
+        <select id="country" name="country" required>
+            <optgroup label="Europe">
+                <option value="uk">United Kingdom</option>
+                <option value="france">France</option>
+                <option value="germany">Germany</option>
+            </optgroup>
+            <optgroup label="Asia">
+                <option value="india">India</option>
+                <option value="china">China</option>
+                <option value="japan">Japan</option>
+                <option value="nepal">Nepal</option>
+            </optgroup>
+            <optgroup label="America">
+                <option value="usa">United States</option>
+                <option value="canada">Canada</option>
+                <option value="brazil">Brazil</option>
+            </optgroup>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Enter your message here..." required></textarea>
+    </div>
+    <div class="form-group">
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" min="18" max="100" placeholder="Enter your age" required>
+    </div>
+    <div class="form-group">
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required>
+    </div>
+    <div class="form-group">
+        <label for="favcolor">Favorite Color</label>
+        <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+    </div>
+    <div class="form-group file-container">
+        <label for="fileUpload">Upload Your Resume</label>
+        <input type="file" id="fileUpload" name="fileUpload" accept=".pdf,.docx,.txt">
+    </div>
+    <div class="form-group range-container">
+        <label for="rating">Rating</label>
+        <input type="range" id="rating" name="rating" min="0" max="10" step="1" value="5">
+        <output for="rating">5</output>
+    </div>
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
